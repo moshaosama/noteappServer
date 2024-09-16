@@ -5,7 +5,7 @@ const getDay = date.getDate();
 const getMonth = date.getMonth();
 const getYear = date.getFullYear();
 
-exports.getNotes = async (req, res) => {
+exports.getNotes = async (res) => {
   try {
     const Notes = await Note.find();
 
